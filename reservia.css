@@ -1,5 +1,12 @@
+* { /*use of border box so all of my elements are  calculated the same way(including borders and padding)*/
+  box-sizing: border-box;
+}
 body{
   font-family: Raleway, sans-serif;
+}
+main { /*align all items in main*/ 
+  padding: 15px;
+  width: 100%;
 }
 .menu a {
   color: #000000;
@@ -8,7 +15,7 @@ body{
 .menu span a {
   color: #0065FC;
   font-weight: bold;
-  float: right;
+  float: right; /*s'inscrire goes to the right of the logo*/
   margin-top: 15px;
   margin-right: 5px;
 }
@@ -17,13 +24,13 @@ body{
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 0;
+  padding: 0; /*to elimanate the existing padding by default and therefore place my <li>. */
 }
 .menu li {
   width: 50%;
 }
 .menu li a {
-  display: block;
+  display: block; /* so my <li> tag can take the width and i can place excaclty where i need*/
   width: 100%;
   text-align: center;
   padding: 8px;
@@ -32,7 +39,41 @@ body{
 }
 .menu li a:hover {
   color: #0065FC;
-  border-bottom: 3px solid #0065FC;.
+  border-bottom: 3px solid #0065FC;
+}
+.input-container {
+  width: 100%;
+  height: 50px;
+  display: inline-flex;
+}
+.input-container input {
+  border: none;
+  border-top: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
+  height: 100%;
+  margin-right: 0;
+  padding-right: 0;
+}
+.fas { /*icons font awsome*/
+  line-height: 2; /*make more space and readable the icons*/
+}
+.location-icon {
+  background-color: #F2F2F2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;/*to center the icon verticaly*/
+  text-align: center;
+}
+.search-icon {
+  background-color: #0065FC;
+  color: white;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;/*to center the icon verticaly*/
+  text-align: center;
 }
 #filter-list {
   list-style-type: none;
