@@ -3,6 +3,7 @@
 }
 body{
   font-family: Raleway, sans-serif;
+  margin: 0;
 }
 main { /*align all items in main*/ 
   padding: 15px;
@@ -45,14 +46,19 @@ main { /*align all items in main*/
   width: 100%;
   height: 50px;
   display: inline-flex;
+  position: relative;/* so the children are positioned relatively to their parent*/
 }
 .input-container input {
-  border: none;
+  flex: 1;
+  border-right: none;
+  border-left: none;
   border-top: 2px solid #F2F2F2;
   border-bottom: 2px solid #F2F2F2;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   height: 100%;
-  margin-right: 0;
-  padding-right: 0;
+  padding-right: 65px;
+  padding-left: 15px;
 }
 .fas { /*icons font awsome*/
   line-height: 2; /*make more space and readable the icons*/
@@ -67,6 +73,8 @@ main { /*align all items in main*/
   text-align: center;
 }
 .search-icon {
+  position: absolute;/*child of the input container*/
+  right: 0;
   background-color: #0065FC;
   color: white;
   border-radius: 10px;
@@ -75,10 +83,39 @@ main { /*align all items in main*/
   line-height: 50px;/*to center the icon verticaly*/
   text-align: center;
 }
+#most-pop {
+  background-color: #F2F2F2;
+}
 #filter-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+#filter-list .icon-filter {
+  border: 2px solid #F2F2F2;
+  margin: 10px 0;
+  border-radius: 50px;
+  display: inline-block;
+}
+.circle-icon {
+  display: inline-block;/*so it goes to the same line as the elements that souround it */
+  background-color: #DEEBFF;
+  color: #0065FC;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;/*to center the icon verticaly*/
+  text-align: center;
+}
+.info-icon {
+  border: 2px solid #F2F2F2;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
 }
 .footer-links ul{
   list-style-type: none;
