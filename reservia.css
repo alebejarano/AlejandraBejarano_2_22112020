@@ -83,7 +83,7 @@ section { /*align all items in each section*/
   line-height: 50px;/*to center the icon verticaly*/
   text-align: center;
 }
-#most-pop {
+#most-pop, footer {
   background-color: #F2F2F2;
 }
 #filter-list {
@@ -129,23 +129,48 @@ section { /*align all items in each section*/
 .chart-line { /*NOT VALIDATED YET--Need this icon to move along the grey area, along the screen as it gets wider*/
   margin-left: 15px;
 }
-.pictures-pop {
+.pictures-pop {/*pictures use in les plus populaires section*/
   width: 50%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.pictures-long {
+.pictures-long { /*pictures use in hebergements marseille and activités*/
   width: 80%;
 }
-.result-block {
+.result-pop {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   border: 2px solid white;
   background-color: white;
   border-radius: 15px;
   padding: 5px;;
   margin: 10px;
+  width: 100%;
+  box-shadow: 0px 0px 7px 0px #d9d9d9;
+}
+h4 {
+  margin-bottom:  2px;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.hotel-pop {
+  margin-left: 10px; /*make espace between the pictures and the parahrapgh*/
+}
+.result-block {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;;
+  margin: 10px;
+  width: 100%;
+  box-shadow: 0px 2px 7px 0px #d9d9d9;
+}
+.full-stars {
+  color: #0065FC;
+}
+.empty-stars {
+  color: #d9d9d9;
 }
 .footer-links ul{
   list-style-type: none;
