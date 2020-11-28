@@ -153,7 +153,7 @@ section { /*align all items in each section*/
   width: 100%;
   box-shadow: 0px 0px 7px 0px #d9d9d9;
 }
-#most-pop a {
+#most-pop a, #hotels-results a {
   text-decoration: none;
   color: #000000;
 }
