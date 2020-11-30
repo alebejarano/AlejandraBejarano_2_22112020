@@ -145,7 +145,6 @@ section { /*align all items in each section*/
 }
 .results-pop {
   display: flex;
-  border: 2px solid white;
   background-color: white;
   border-radius: 15px;
   padding: 5px;
@@ -191,18 +190,28 @@ p {
   margin-top: 10px;
 }
 .result-block { /*blocks of 'hebergements et activités'*/
-  border: 2px solid white;
-  background-color: white;
   border-radius: 15px;
-  padding: 5px;;
+  padding: 5px;
   margin: 10px 0;/*to make espace between each box*/
   width: 100%;
   box-shadow: 0px 2px 7px 0px #d9d9d9;  
 }
+#activities {
+  padding-bottom: 30px;
+}
+.result-block.activities {
+  padding: 0 0 5px 0;
+  border: none;
+  margin: 20px 0;
+  flex: 100%;
+}
+.row {
+ /* display: flex;
+  flex-wrap: wrap;*/
+}
 .result-block a {
   text-decoration: none;
   color: #000000;
-}
 }
 #hotels-results > h3 { /*'afficher plus' button*/
   margin-top: 40px;
@@ -230,4 +239,27 @@ footer {
 .footer-links li a {
   text-decoration: none;
   color: #000000;
+}
+@media screen and (min-width: 640px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+  }
+  .results-pop {
+    margin: 10px;
+    width: 320px;
+  }
 }
