@@ -87,6 +87,9 @@ section { /*align all items in each section*/
   line-height: 50px;/*to center the icon verticaly*/
   text-align: center;
 }
+.text-search {
+  display: none;
+}
 #most-pop, footer {
   background-color: #F2F2F2;
 }
@@ -205,10 +208,6 @@ p {
   margin: 20px 0;
   flex: 100%;
 }
-.row {
- /* display: flex;
-  flex-wrap: wrap;*/
-}
 .result-block a {
   text-decoration: none;
   color: #000000;
@@ -241,15 +240,17 @@ footer {
   color: #000000;
 }
 @media screen and (min-width: 640px) {
+  .input-container {
+    width: 420px;
+  }
   .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
 }
   footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 768px) {
@@ -262,4 +263,94 @@ footer {
     margin: 10px;
     width: 320px;
   }
+  .menu ul {
+    float: right;
+  }
+  .menu li {
+    width: initial;
+  }
+  .menu li a {
+    padding: 26px;
+    border-top: 3px solid #F2F2F2;
+    border-bottom: none;
+    margin-top: 0;
+  }
+  .menu li a:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    border-bottom: none;
+  }
+  .menu span a {
+    margin-right: 26px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .search-icon {
+    display: none;
+  }
+  .text-search {
+    display: block;
+    background-color: #0065FC;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    right: 0;
+  }
+  .filters {
+    margin: 30px 20px 20px 6px;
+  }
+  .filters h3 {
+    float: left;
+    margin-right: 15px;
+  }
+  #filter-list li {
+    margin-right: 20px;
+  }
+  .info-icon {
+    transform: translate(4px, -4px);
+  }
+  .info {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  #most-pop {
+    width: 25em;
+    float: right;
+    border-radius: 10px;
+  }
+  #most-pop h2 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sidebar {
+    display: block;
+  }
+  .results-pop {
+    margin: 15px;
+  }
+  #hotels-results {
+    width: 55%;
+    float: left;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+  }
+  #activities {
+    clear: both;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hebergements {
+    width: 15em;
+  }
+  
+  
 }
