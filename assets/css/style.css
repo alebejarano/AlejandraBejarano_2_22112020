@@ -366,29 +366,33 @@ footer {
   /*#activities {
     clear: both;
   }*/
+  #activities h2 {
+    padding-left: 15px;
+  }
   .desktop-activities {
     display: flex;
     flex-direction: column;
     height: 440px;
     flex-wrap: wrap;
+    padding: 15px 20px 15px 15px;
   }
   .big-size {
-    height: 100%;
-    width: 25%;
+    height: calc(100% - 20px);
+    width: calc(25% - 20px);
   }
   .medium-size {
-    height: 65%;
-    width: 25%;
+    height: calc(65% - 20px);
+    width: calc(25% - 20px);
   }
   .normal-size {
-    height: 50%;
-    width: 25%;
+    height: calc(50% - 20px);
+    width: calc(25% - 20px);
   }
   .small-size {
-    height: 35%;
-    width: 25%;
+    height: calc(35% - 20px);
+    width: calc(25% - 20px);
   }
   .result-block.activities {
-    margin: 0;
+    margin: 0 20px 20px 0;
   }
 }
