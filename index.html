@@ -29,8 +29,8 @@
             <div class="input-container">
                 <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div><!--wrap in a <div> so i can make a box as the design in css-->
                 <input class="input-field" type="text" name="chosen-place" placeholder="Marseille, France" />
-                <div class="search-icon"><i class="fas fa-search"></i></div>
-                <div class="text-search">Rechercher</div>
+                <button class="search-icon"><i class="fas fa-search"></i></button>
+                <button type="submit" class="text-search">Rechercher</button><!--for the desktop version-->
             </div>
             <nav class="filters">
                 <h3>Filtres</h3>
@@ -47,8 +47,8 @@
                 cette ville</div>
             </div>
         </section>
-        <section class="desktop-block">
-            <sidebar id="most-pop"> <!--most popular-->
+        <div class="desktop-block">
+            <article id="most-pop"> <!--most popular-->
                 <h2>Les plus populaires<span class="chart-line"><i class="fas fa-chart-line"></i></span></h2>
                 <div class="sidebar">
                     <a href="#"><!--the whole 'les plus populaires' block is linkable-->
@@ -115,7 +115,7 @@
                         </div>
                     </a>
                 </div>
-            </sidebar>
+            </article>
             <section id="hotels-results"><!--Hotels in the chosen city-->
                 <h2>Hébergements à Marseille</h2>
                 <div class="row">
@@ -224,12 +224,12 @@
                 </div>
                 <a href="#"><h3>Afficher plus</h3></a>
             </section>
-        </section>
+        </div>
         
         <section id="activities"><!--activities-->
             <h2>Activités à Marseille</h2>
-            <div class="row">
-                <div class="result-block activities">
+            <div class="row desktop-activities">
+                <div class="result-block activities big-size">
                     <a href="#">
                         <div class="pictures-long" 
                             style="background-image: url('assets/images/activites/4_small/vieux-port.jpg');"
@@ -238,7 +238,7 @@
                         <h4>Vieux Port</h4>
                     </a>
                 </div>
-                <div class="result-block activities">
+                <div class="result-block activities medium-size">
                     <a href="#">
                         <div class="pictures-long" 
                             style="background-image: url('assets/images/activites/4_small/fort-de-pomegues.jpg');"
@@ -247,7 +247,7 @@
                         <h4>Fort de Pomègues</h4>
                 </a>
                 </div>
-                <div class="result-block activities">
+                <div class="result-block activities small-size">
                     <a href="#">
                         <div class="pictures-long" 
                             style="background-image: url('assets/images/activites/4_small/ile-de-frioul.jpg');" 
@@ -257,7 +257,7 @@
                 </a>
                 </div>
                 
-                <div class="result-block activities">
+                <div class="result-block activities big-size">
                     <a href="#">
                         <div class="pictures-long" 
                             style="background-image: url('assets/images/activites/4_small/parc-national-calanques.jpg');"
@@ -266,7 +266,7 @@
                         <h4>Parc National des Calanques</h4>
                     </a>
                 </div>
-                <div class="result-block activities">
+                <div class="result-block activities normal-size">
                     <a href="#">
                         <div class="pictures-long" 
                             style="background-image: url('assets/images/activites/4_small/notre-dame-de-la-garde.jpg');"
@@ -275,7 +275,7 @@
                         <h4>Notre-Dame-de-la-Garde</h4>
                     </a>
                 </div>
-                <div class="result-block activities">
+                <div class="result-block activities normal-size">
                     <a href="#">
                         <div class="pictures-long" 
                             style="background-image: url('assets/images/activites/4_small/parc-longchamp.jpg');" 
