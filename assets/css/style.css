@@ -367,21 +367,26 @@ footer {
     clear: both;
   }*/
   .desktop-activities {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 440px;
-    columns: 4 200px;
+    flex-wrap: wrap;
   }
   .big-size {
     height: 100%;
+    width: 25%;
   }
   .medium-size {
     height: 65%;
+    width: 25%;
   }
   .normal-size {
     height: 50%;
+    width: 25%;
   }
   .small-size {
     height: 35%;
+    width: 25%;
   }
   .result-block.activities {
     margin: 0;
