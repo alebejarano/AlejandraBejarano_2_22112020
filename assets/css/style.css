@@ -4,6 +4,7 @@
 body{
   font-family: Raleway, sans-serif;
   margin: 0;
+  font-size: 16px;
 }
 section, article { /*align all items in each section*/ 
   padding: 15px;
@@ -320,7 +321,7 @@ footer {
   }
   .results-pop {
     margin: 10px;
-    width: 100%;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -386,6 +387,7 @@ footer {
   }
   .results-pop {
     margin: 15px;
+    width: 100%;
   }
   #hotels-results {
     width: 65%;
