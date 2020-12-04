@@ -320,7 +320,7 @@ footer {
   }
   .results-pop {
     margin: 10px;
-    width: 320px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -358,14 +358,15 @@ footer {
   .desktop-block { /*'hébergements' and 'le plus poppulaires'*/
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 30px;
   }
   #most-pop {
     width: 35%;
-    max-width: fit-content;
+    /*max-width: fit-content;*/
     border-radius: 10px;
     height: fit-content;
+    margin-left: 30px;
   }
   #most-pop h2 {
     margin-right: 20px;
@@ -380,7 +381,7 @@ footer {
     margin: 15px;
   }
   #hotels-results {
-    width: 60%;
+    width: 65%;
     background-color: #F2F2F2;
     border-radius: 10px;
     padding: 20px;
@@ -395,10 +396,10 @@ footer {
   .row { /*hotels results*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /*justify-content: ;*/
   }
   .hebergements {/*the individual hotel result block*/
-    width: 15em; /*so it does not shrink or expand as much as the screen expands, they will  wrap down*/
+    width: 32%; /*s*/
   }
   #activities h2 {
     padding-left: 15px;
