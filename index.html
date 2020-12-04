@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Trouvez votre hebergement de rêve. Reservia site numero 1 des reservations online" />
+    <meta name="description" content="Trouvez votre hebergement de rêve. Reservia site numero 1 des reservations en ligne" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/92f9a50f4f.js" crossorigin="anonymous"></script>
@@ -15,7 +15,7 @@
         <div class="menu">
             <img id="logo" src="assets/images/logo/Reservia.svg" alt="logo de Reservia" />
             <span><a href="#">S'inscrire</a></span><!--stays independent from the menu bar-->
-            <ul>
+            <ul><!--menu bar-->
                 <li><a href="#hotels-results">Hébergement</a></li>
                 <li><a href="#activities">Activités</a></li>
             </ul>
@@ -48,10 +48,10 @@
             </div>
         </section>
         <div class="desktop-block">
-            <article id="most-pop"> <!--most popular-->
+            <article id="most-pop"> <!--most popular hotels-->
                 <h2>Les plus populaires<span class="chart-line"><i class="fas fa-chart-line"></i></span></h2>
-                <div class="sidebar">
-                    <a href="#"><!--the whole 'les plus populaires' block is linkable-->
+                <div class="sidebar"><!--the sidebar for the desktop version-->
+                    <a href="#">
                         <div class="results-pop">
                             <div class="pictures-pop"
                                 title="chambre Hôtel Le soleil du matin"
@@ -118,7 +118,7 @@
             </article>
             <section id="hotels-results"><!--Hotels in the chosen city-->
                 <h2>Hébergements à Marseille</h2>
-                <div class="row">
+                <div class="row"><!--for the media queries-->
                     <div class="result-block hebergements"><a href="#">
                         <div class="pictures-long" 
                             style="background-image: url('assets/images/hebergements/4_small/auberge-cannebiere.jpg');"
