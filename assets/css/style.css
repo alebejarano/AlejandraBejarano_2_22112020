@@ -324,6 +324,13 @@ footer {
   }
 }
 @media screen and (min-width: 1024px) {
+  header {
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+  section {
+    padding: 15px 25px 15px 25px;
+  }
   .search-icon {
     display: none;
   }
@@ -352,14 +359,14 @@ footer {
     margin-right: 15px;
   }
   .info {
-    margin-top: 40px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   .desktop-block { /*'hébergements' and 'le plus poppulaires'*/
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 30px;
+    padding: 15px 30px 30px 30px;
   }
   #most-pop {
     width: 35%;
@@ -432,5 +439,9 @@ footer {
   }
   footer {
     padding-left: 30px;
+    margin-top: 15px;
+  }
+  .footer-links li {
+    margin: 10px 0;
   }
 }
