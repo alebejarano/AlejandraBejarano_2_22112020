@@ -7,7 +7,7 @@ body{
   font-size: 16px;
 }
 section, article { /*align all items in each section*/ 
-  padding: 15px;
+  padding: 20px;
   width: 100%;
 }
 #logo {
