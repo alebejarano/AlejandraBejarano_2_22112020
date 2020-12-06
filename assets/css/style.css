@@ -310,7 +310,8 @@ footer {
   .menu li a {
     padding: 26px;
     border-bottom: none;
-    margin-top: 4px;
+    margin-top: 0;
+    border-top: 3px solid transparent;
   }
   .menu li a:hover {
     color: #0065FC;
