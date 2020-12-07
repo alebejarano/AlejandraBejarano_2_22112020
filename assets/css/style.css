@@ -28,7 +28,6 @@ section, article { /*align all items in each section*/
 .menu ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0; /*to elimanate the existing padding by default and therefore place my <li>. */
 }
@@ -47,18 +46,28 @@ section, article { /*align all items in each section*/
   color: #0065FC;
   border-bottom: 3px solid #0065FC;
 }
-.input-field { 
-  font-size: 1em;
-  font-weight: bold;
-  min-width: 100px;
-  outline: none;
-}
 .input-container {
   width: 100%;
   max-width: 420px;
   height: 50px;
   display: inline-flex;
   position: relative;/* so the children are positioned relatively to their parent*/
+}
+.location-icon {
+  background-color: #F2F2F2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;/*to center the icon verticaly*/
+  text-align: center;
+  min-width: 40px;
+}
+.input-field { 
+  font-size: 1em;
+  font-weight: bold;
+  min-width: 100px;
+  outline: none;
 }
 .input-container input {
   flex: 1;/*how it will grow relative to the other flex items*/
@@ -74,16 +83,6 @@ section, article { /*align all items in each section*/
 }
 .fas { /*icons font awsome*/
   line-height: 2; /*make more space and readable the icons*/
-}
-.location-icon {
-  background-color: #F2F2F2;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;/*to center the icon verticaly*/
-  text-align: center;
-  min-width: 40px;
 }
 .search-icon {
   position: absolute;/*child of the input container, it places next to the input text*/
@@ -113,21 +112,7 @@ section, article { /*align all items in each section*/
   padding: 0;
   font-weight: bold;
 }
-#filter-list li {
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border: 2px solid #F2F2F2;
-  border-radius: 50px;
-  padding-right: 15px;
-  display: inline-block;
-  transition: background-color 0.25s ease-out;
-}
-#filter-list li:hover {
-  cursor: pointer;
-  background-color: #DEEBFF;
-  transform: scale(1.1);
-}
-.circle-icon {
+.circle-icon { /*icons in filters*/
   display: inline-block;/*so it goes to the same line as the elements that souround it */
   background-color: #DEEBFF;
   color: #0065FC;
@@ -138,6 +123,19 @@ section, article { /*align all items in each section*/
   line-height: 50px;/*to center the icon verticaly*/
   text-align: center;
 }
+#filter-list li {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 2px solid #F2F2F2;
+  border-radius: 50px;
+  padding-right: 15px;
+  transition: background-color 0.25s ease-out;
+}
+#filter-list li:hover {
+  cursor: pointer;
+  background-color: #DEEBFF;
+  transform: scale(1.1);
+}
 .info {
   margin-top: 20px;/*to space the filters from the info*/
   margin-bottom: 20px;
@@ -147,20 +145,20 @@ section, article { /*align all items in each section*/
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  line-height: 27px;
+  line-height: 27px;/*to center the icon verticaly*/
   text-align: center;
-  font-size: 0.7em;/*to center the icon verticaly*/
+  font-size: 0.7em;
   color: #0065FC;
   float: left; /*so it places next to the info paragraph*/
   margin-right: 10px;
   transform: translate(4px, -4px);/*so it is align with the text info*/
 }
+#most-pop h2 { /*align the heading with the 'chart-line' icons*/
+  line-height: 2;
+}
 .chart-line { /*icon to move along the grey area, along the screen as it gets wider*/
   float: right;
   margin-right: 5px;
-}
-#most-pop h2 { /*align the heading with the 'chart-line' icons*/
-  line-height: 2;
 }
 .results-pop {
   display: flex;/*the elements inside the block shows as the mockup design*/
@@ -198,22 +196,21 @@ p {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-.hotel-block {/*contains: hotel name, price, stars*/
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  /*align-items: flex-start;*/
-  justify-content: space-between
-}
-.hotel-block h4 { 
-  margin-top: 10px;
-}
 .result-block { /*blocks of 'hebergements' et 'activités'*/
   border-radius: 15px;
   padding: 5px;
   margin: 10px 0;/*to make espace between each box*/
   width: 100%;
   box-shadow: 0px 2px 7px 0px #d9d9d9;  
+}
+.hotel-block {/*contains: hotel name, price, stars*/
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.hotel-block h4 { 
+  margin-top: 10px;
 }
 #activities {
   padding-bottom: 30px;
@@ -301,7 +298,7 @@ footer {
     margin-right: 26px;
     margin-left: 26px;
   }
-  .menu ul {
+  .menu nav {
     float: right;
   }
   .menu li {
