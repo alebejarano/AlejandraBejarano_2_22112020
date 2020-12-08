@@ -6,6 +6,9 @@ body{
   margin: 0;
   font-size: 16px;
 }
+h2 {
+  font-size: 22px;
+}
 section, article { /*align all items in each section*/ 
   padding: 20px;
   width: 100%;
@@ -190,7 +193,7 @@ section, article { /*align all items in each section*/
   background-position: center center;
 }
 h4 {
-  margin-bottom:  5px;
+  margin-bottom:  0;
 }
 p {
   margin-top: 5px;
@@ -203,14 +206,15 @@ p {
   width: 100%;
   box-shadow: 0px 2px 7px 0px #d9d9d9;  
 }
-.hotel-block {/*contains: hotel name, price, stars*/
-  margin-left: 10px;
+.hotel-block {/*contains: hotel name, price, stars in most pop and 'hebergements'*/
+  padding: 10px 10px 5px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
+  min-height: calc(100% - 110px);
 }
 .hotel-block h4 { 
-  margin-top: 10px;
+  margin-top: 0px;
 }
 #activities {
   margin-bottom: 30px;
@@ -390,6 +394,7 @@ footer {
   .results-pop {
     margin: 15px;
     width: 100%;
+    min-width: revert;
   }
   #hotels-results {
     width: 65%;
@@ -413,6 +418,7 @@ footer {
   .hebergements {/*the individual hotel result block*/
     width: 30%;
     margin-right: 10px;
+    background-color: white;
   }
   #activities h2 {
     padding-left: 15px;
