@@ -394,7 +394,7 @@ footer {
   .results-pop {
     margin: 15px;
     width: 100%;
-    min-width: revert;
+    min-width: initial;
   }
   #hotels-results {
     width: 65%;
