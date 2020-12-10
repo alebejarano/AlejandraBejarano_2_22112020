@@ -258,7 +258,7 @@ p {
   margin: 15px 10px;
 }
 .full-stars {
-  color: #0065FC;
+  color: #0065FC; /*comments*/
 }
 .empty-stars {
   color: #d9d9d9;
