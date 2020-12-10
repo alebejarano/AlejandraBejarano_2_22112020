@@ -184,6 +184,15 @@ section, article { /*align all items in each section*/
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
+.soleil-matin {
+  background-image: url('../images/hebergements/4_small/soleil-matin.jpg');
+}
+.coeur-eau {
+  background-image: url('../images/hebergements/4_small/coeur-eau.jpg');
+}
+.bleu-et-blanc {
+  background-image: url('../images/hebergements/4_small/tout-bleu-blanc.jpg');
+}
 .pictures-long { /*pictures use in 'hebergements marseille'*/
   min-width: 50%;
   background-size: cover;
@@ -191,6 +200,24 @@ section, article { /*align all items in each section*/
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-position: center center;
+}
+.la-cannebiere {
+  background-image: url('../images/hebergements/4_small/auberge-cannebiere.jpg');
+}
+.hotel-port {
+  background-image: url('../images/hebergements/4_small/hotel-port.jpg');
+}
+.les-mouettes {
+  background-image: url('../images/hebergements/4_small/hotel-mouettes.jpg');
+}
+.mer {
+  background-image: url('../images/hebergements/4_small/hotel-lamer.jpg');
+}
+.le-panier {
+  background-image: url('../images/hebergements/4_small/auberge-le-panier.jpg');
+}
+.chez-amina {
+  background-image: url('../images/hebergements/4_small/hotel-chez-amina.jpg');
 }
 h4 {
   margin-bottom:  0;
@@ -236,6 +263,24 @@ p {
   background-position: center center;
   background-size: cover;
 }
+.vieux-port {
+  background-image: url('../images/activites/4_small/vieux-port.jpg');
+}
+.fort-pomegues {
+  background-image: url('../images/activites/4_small/fort-de-pomegues.jpg');
+}
+.iles-frioul {
+  background-image: url('../images/activites/4_small/ile-de-frioul.jpg');
+}
+.calanques {
+  background-image: url('../images/activites/4_small/parc-national-calanques.jpg');
+}
+.notre-dame {
+  background-image: url('../images/activites/4_small/notre-dame-de-la-garde.jpg');
+}
+.longchamp {
+  background-image: url('../images/activites/4_small/parc-longchamp.jpg');
+}
 .activities h4 {
   position: absolute;
   bottom: 0;
@@ -258,7 +303,7 @@ p {
   margin: 15px 10px;
 }
 .full-stars {
-  color: #0065FC; /*comments*/
+  color: #0065FC;
 }
 .empty-stars {
   color: #d9d9d9;
